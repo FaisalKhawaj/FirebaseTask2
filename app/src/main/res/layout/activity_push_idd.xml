@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:id="@+id/et_name"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/roundededittext"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Age"
+        android:id="@+id/et_age"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:textColorHint="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/roundededittext"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/tv"/>
+
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Save Data to Firebase"
+        android:id="@+id/btn_save"
+        android:textStyle="bold"
+        android:background="@drawable/roundedbtn"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Read Data from Firebase"
+        android:id="@+id/btn_read"
+        android:onClick="readDataFromFirebase"
+        android:textStyle="bold"
+        android:background="@drawable/roundedbtn"
+        tools:ignore="OnClick" />
+
+</LinearLayout>
